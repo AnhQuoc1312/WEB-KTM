@@ -1,58 +1,57 @@
 * {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #f1f1f1;
-  margin: 0;
-  padding: 20px;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Layout */
+/* Container chính */
 .container {
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
-  gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Left */
+/* Cột trái */
 .left {
-  width: 30%;
+    width: 30%;
+}
+
+.left h2, .left h3 {
+    margin-top: 0;
 }
 
 .left img {
-  width: 100%;
-  margin-bottom: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
-/* Right */
+/* Cột phải */
 .right {
-  width: 70%;
+    width: 70%;
 }
 
-.big-img {
-  width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  margin: 16px 0;
+.right h1 {
+    margin-top: 0;
 }
 
 .date {
-  color: gray;
-  font-size: 14px;
+    color: gray;
+    font-size: 14px;
 }
 
-/* Responsive (mobile) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .left, .right {
+/* Ảnh lớn */
+.main-img {
     width: 100%;
-  }
+    height: auto;
+    margin: 15px 0;
+    border-radius: 6px;
 }
